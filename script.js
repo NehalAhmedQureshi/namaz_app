@@ -10,5 +10,4 @@ function api(){
     .then(data => console.log(data.data[21].timings))
     // namaz timings => data.data[10].timings
 }
-
 api();
