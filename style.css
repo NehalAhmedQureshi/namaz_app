@@ -127,6 +127,7 @@ body {
   align-items: center;
 }
 #prayerTimes {
+    text-align: center;
     width: 30%;
     height: 60vh;
     background-color: #fff;

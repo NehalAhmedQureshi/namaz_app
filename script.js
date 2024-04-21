@@ -1,4 +1,4 @@
-let main = 'https://api.aladhan.com/v1/calendarByAddress/2024/4?address=karachi'
+// let main = 'https://api.aladhan.com/v1/calendarByAddress/2024/4?address=karachi'
 let form = document.querySelector('#form')
 let input = document.querySelector('#searchInput')
 let printer = document.querySelector('#para')
@@ -19,6 +19,9 @@ let timePrinter = document.querySelector('#prayerTimes')
 // }
 // api(); 
 
+let currentDate =new Date()
+let onlyDate = currentDate.getDate();
+let completeDate = (currentDate.toDateString());
 
 
 form.addEventListener('submit',(event) => {
@@ -38,11 +41,16 @@ form.addEventListener('submit',(event) => {
         // console.log(response); //JSON format 
     
         let data = await response.json();
-        // ---------------- for date -------------
-        let date = userDate.value - 1;
+
+        // --------------------- for date -----------------------------
+        
+        let date = onlyDate - 1;
         // console.log(data.data[date].timings);
 
-        timePrinter.innerHTML = `Fajir: ${data.data[date].timings.Fajr} <br>
+        timePrinter.innerHTML = `
+        ${completeDate} <br>
+        <br>
+        Fajir: ${data.data[date].timings.Fajr} <br>
         Sunrise: ${data.data[date].timings.Sunrise} <br>
         Zuhur: ${data.data[date].timings.Dhuhr} <br>
         Asar: ${data.data[date].timings.Asr} <br>
