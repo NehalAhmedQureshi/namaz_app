@@ -92,14 +92,14 @@ form.addEventListener('submit', (event) => {
         head2.innerHTML = `${input.value}, ${data.data[week2].date.gregorian.weekday.en} ${data.data[week2].date.readable}`
         para2.innerHTML = `
         <br>
-        Fajir: ${data.data[week1].timings.Fajr} <br>
-        Sunrise: ${data.data[week1].timings.Sunrise} <br>
-        Zuhur: ${data.data[week1].timings.Dhuhr} <br>
-        Asar: ${data.data[week1].timings.Asr} <br>
-        Sunset: ${data.data[week1].timings.Sunset} <br>
-        Maghrib: ${data.data[week1].timings.Maghrib} <br>
-        Isha: ${data.data[week1].timings.Isha} <br>
-        Midnight: ${data.data[week1].timings.Midnight}`;
+        Fajir: ${data.data[week2].timings.Fajr} <br>
+        Sunrise: ${data.data[week2].timings.Sunrise} <br>
+        Zuhur: ${data.data[week2].timings.Dhuhr} <br>
+        Asar: ${data.data[week2].timings.Asr} <br>
+        Sunset: ${data.data[week2].timings.Sunset} <br>
+        Maghrib: ${data.data[week2].timings.Maghrib} <br>
+        Isha: ${data.data[week2].timings.Isha} <br>
+        Midnight: ${data.data[week2].timings.Midnight}`;
 
         // -------------------------------- day 3 -----------------------------
         let week3 = week2 + 1
@@ -107,14 +107,14 @@ form.addEventListener('submit', (event) => {
         head3.innerHTML = `${input.value}, ${data.data[week3].date.gregorian.weekday.en} ${data.data[week3].date.readable}`
         para3.innerHTML = `
         <br>
-        Fajir: ${data.data[week1].timings.Fajr} <br>
-        Sunrise: ${data.data[week1].timings.Sunrise} <br>
-        Zuhur: ${data.data[week1].timings.Dhuhr} <br>
-        Asar: ${data.data[week1].timings.Asr} <br>
-        Sunset: ${data.data[week1].timings.Sunset} <br>
-        Maghrib: ${data.data[week1].timings.Maghrib} <br>
-        Isha: ${data.data[week1].timings.Isha} <br>
-        Midnight: ${data.data[week1].timings.Midnight}`;
+        Fajir: ${data.data[week3].timings.Fajr} <br>
+        Sunrise: ${data.data[week3].timings.Sunrise} <br>
+        Zuhur: ${data.data[week3].timings.Dhuhr} <br>
+        Asar: ${data.data[week3].timings.Asr} <br>
+        Sunset: ${data.data[week3].timings.Sunset} <br>
+        Maghrib: ${data.data[week3].timings.Maghrib} <br>
+        Isha: ${data.data[week3].timings.Isha} <br>
+        Midnight: ${data.data[week3].timings.Midnight}`;
 
         // -------------------------------- day 4 -----------------------------
         let week4 = week3 + 1
@@ -122,42 +122,42 @@ form.addEventListener('submit', (event) => {
         head4.innerHTML = `${input.value}, ${data.data[week4].date.gregorian.weekday.en} ${data.data[week4].date.readable}`
         para4.innerHTML = `
         <br>
-        Fajir: ${data.data[week1].timings.Fajr} <br>
-        Sunrise: ${data.data[week1].timings.Sunrise} <br>
-        Zuhur: ${data.data[week1].timings.Dhuhr} <br>
-        Asar: ${data.data[week1].timings.Asr} <br>
-        Sunset: ${data.data[week1].timings.Sunset} <br>
-        Maghrib: ${data.data[week1].timings.Maghrib} <br>
-        Isha: ${data.data[week1].timings.Isha} <br>
-        Midnight: ${data.data[week1].timings.Midnight}`;
+        Fajir: ${data.data[week4].timings.Fajr} <br>
+        Sunrise: ${data.data[week4].timings.Sunrise} <br>
+        Zuhur: ${data.data[week4].timings.Dhuhr} <br>
+        Asar: ${data.data[week4].timings.Asr} <br>
+        Sunset: ${data.data[week4].timings.Sunset} <br>
+        Maghrib: ${data.data[week4].timings.Maghrib} <br>
+        Isha: ${data.data[week4].timings.Isha} <br>
+        Midnight: ${data.data[week4].timings.Midnight}`;
         // -------------------------------- day 5 -----------------------------
         let week5 = week4 + 1
         
         head5.innerHTML = `${input.value}, ${data.data[week5].date.gregorian.weekday.en} ${data.data[week5].date.readable}`
         para5.innerHTML = `
         <br>
-        Fajir: ${data.data[week1].timings.Fajr} <br>
-        Sunrise: ${data.data[week1].timings.Sunrise} <br>
-        Zuhur: ${data.data[week1].timings.Dhuhr} <br>
-        Asar: ${data.data[week1].timings.Asr} <br>
-        Sunset: ${data.data[week1].timings.Sunset} <br>
-        Maghrib: ${data.data[week1].timings.Maghrib} <br>
-        Isha: ${data.data[week1].timings.Isha} <br>
-        Midnight: ${data.data[week1].timings.Midnight}`;
+        Fajir: ${data.data[week5].timings.Fajr} <br>
+        Sunrise: ${data.data[week5].timings.Sunrise} <br>
+        Zuhur: ${data.data[week5].timings.Dhuhr} <br>
+        Asar: ${data.data[week5].timings.Asr} <br>
+        Sunset: ${data.data[week5].timings.Sunset} <br>
+        Maghrib: ${data.data[week5].timings.Maghrib} <br>
+        Isha: ${data.data[week5].timings.Isha} <br>
+        Midnight: ${data.data[week5].timings.Midnight}`;
         // -------------------------------- day 6 -----------------------------
         let week6 = week5 + 1
         
-        head6.innerHTML = `${input.value}, ${data.data[week5].date.gregorian.weekday.en} ${data.data[week5].date.readable}`
+        head6.innerHTML = `${input.value}, ${data.data[week6].date.gregorian.weekday.en} ${data.data[week6].date.readable}`
         para6.innerHTML = `
         <br>
-        Fajir: ${data.data[week1].timings.Fajr} <br>
-        Sunrise: ${data.data[week1].timings.Sunrise} <br>
-        Zuhur: ${data.data[week1].timings.Dhuhr} <br>
-        Asar: ${data.data[week1].timings.Asr} <br>
-        Sunset: ${data.data[week1].timings.Sunset} <br>
-        Maghrib: ${data.data[week1].timings.Maghrib} <br>
-        Isha: ${data.data[week1].timings.Isha} <br>
-        Midnight: ${data.data[week1].timings.Midnight}`;
+        Fajir: ${data.data[week6].timings.Fajr} <br>
+        Sunrise: ${data.data[week6].timings.Sunrise} <br>
+        Zuhur: ${data.data[week6].timings.Dhuhr} <br>
+        Asar: ${data.data[week6].timings.Asr} <br>
+        Sunset: ${data.data[week6].timings.Sunset} <br>
+        Maghrib: ${data.data[week6].timings.Maghrib} <br>
+        Isha: ${data.data[week6].timings.Isha} <br>
+        Midnight: ${data.data[week6].timings.Midnight}`;
 
 
         

@@ -5,7 +5,9 @@
 }
 body {
   color: black;
-  background-color: gray;
+  background: url(./gabbiistudios-tvEf2JXd_HY-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* ///////////////////////// home style /////////////// */
@@ -32,9 +34,10 @@ body {
 #form {
     margin: auto;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     gap: 10px;
-    align-content: center;
+    justify-content: center;
+    /* align-content: center; */
 }
 .home {
   display: flex;
